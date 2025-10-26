@@ -1,0 +1,52 @@
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.links a{
+    color: aliceblue;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo p{
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.05) rotate(0deg) !important;
+    z-index: 100 !important;
+}
