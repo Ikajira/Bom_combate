@@ -1,22 +1,89 @@
+
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: url(../../assets/img/show04.jpg);
+    background-image: url(../../assets/img/bom_combate_show.jpeg);
     background-size: cover;
-    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.heroContent {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 .hero h1{
     color: white;
     font-family: "BBH Sans Bogle", sans-serif;
-    font-size: 70px;
-    padding-top: 25vh;
+    font-size: clamp(2.5rem, 8vw, 100px);
+    margin-bottom: 20px;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
 }
 
 .hero p{
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 30px;
+    font-size: clamp(1.125rem, 4vw, 30px);
     font-weight: 400;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .heroContent {
+        padding: 15px;
+    }
+    
+    .hero h1 {
+        padding-top: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .heroContent {
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        min-height: 300px;
+    }
+    
+    .heroContent {
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        font-size: clamp(2rem, 6vh, 60px);
+        margin-bottom: 10px;
+    }
+    
+    .hero p {
+        font-size: clamp(1rem, 3vh, 24px);
+    }
 }

@@ -1,10 +1,41 @@
+/* Interludio.module.css */
 .interludio{
     color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: auto;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .titulo_interludio{
-    font-size: 70px;
+    padding: 10px;
+    font-size: clamp(1rem, 4vw, 30px);
     text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .interludio {
+        min-height: 50px;
+        padding: 8px 0;
+    }
+    
+    .titulo_interludio {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .interludio {
+        min-height: 45px;
+        padding: 5px 0;
+    }
+    
+    .titulo_interludio {
+        padding: 5px 10px;
+    }
 }

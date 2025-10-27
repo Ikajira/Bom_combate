@@ -7,3 +7,7 @@
     font-family: "BBH Sans Bogle", sans-serif;
     font-weight: 200;
 }
+
+html{
+    scroll-behavior: smooth;
+}

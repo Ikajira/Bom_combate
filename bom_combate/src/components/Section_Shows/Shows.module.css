@@ -1,87 +1,133 @@
+/* Shows.module.css */
 .shows{
     width: 100%;
-    height: 200vh;
-    background-color: black;
+    min-height: 100vh;
+    background-image: url(../../assets/img/show_vermelho1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     align-items: center;
     text-align: left;
+    padding: 20px 0;
 }
 
-.h1clipes{
-    font-size: 70px;
-    padding-top: 10vh;
-    padding-left: 30vh;
+.h1clipes, .h1shows, .h1redes{
+    font-size: clamp(2rem, 6vw, 70px);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
 }
 
-.youtube{
-    width: 80%;
-    height: 40vh;
-    margin: auto;
-    margin-top: 5vh;
+.youtube, .youtube2{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.videos{
-    width: 45%;
-    height: 40vh;
+.videos, .videos2{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
     background-color: aliceblue;
-}
-
-.h1shows{
-    font-size: 70px;
-    padding-top: 10vh;
-    padding-left: 30vh;
-}
-
-.youtube2{
-    width: 80%;
-    height: 50vh;
-    margin: auto;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: black;
-}
-
-.videos2{
-    width: 45%;
-    height: 40vh;
-    background-color: aliceblue;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    min-height: 250px;
 }
 
 .redes{
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.h1redes{
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .logo_redes{
-    width: 25vh;
-    height: 25vh;
-    margin-top: 10vh;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    flex-shrink: 0;
 }
 
 .logo_redes img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .logo_redes p, a{
-    font-size: 25px;
+    font-size: clamp(0.875rem, 2vw, 25px);
     text-decoration: none;
     color: #FFFFFF;
-    margin-top: 2vh;
+    margin-top: 10px;
+    text-align: center;
 }
 
 a:hover {
   color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .shows {
+        background-attachment: scroll;
+    }
+    
+    .youtube, .youtube2 {
+        width: 95%;
+        gap: 15px;
+    }
+    
+    .videos, .videos2 {
+        height: 250px;
+        min-height: 200px;
+    }
+    
+    .logo_redes {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .redes {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1clipes, .h1shows, .h1redes {
+        padding: 15px 10px;
+    }
+    
+    .youtube, .youtube2 {
+        width: 98%;
+        gap: 10px;
+    }
+    
+    .videos, .videos2 {
+        height: 200px;
+        min-height: 180px;
+    }
+    
+    .logo_redes {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .redes {
+        gap: 15px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .videos, .videos2 {
+        height: 350px;
+    }
 }

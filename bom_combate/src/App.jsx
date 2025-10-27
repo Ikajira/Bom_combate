@@ -6,11 +6,14 @@ import Shows from './components/Section_Shows/Shows'
 import Integrantes from './components/Integrantes/Integrantes'
 import Interludio from './components/Interludio/Interludio'
 import Interludio02 from './components/Interludio02/Interludio02'
+import Footer from './components/Footer/Footer'
+import AccessibilityWidget from './components/Acessibilidade_API/Acessibilidade_API'
 
 function App() {
 
   return (
     <>
+      <AccessibilityWidget />
       <Header />
       <Hero />
       <Interludio />
@@ -18,6 +21,7 @@ function App() {
       <Interludio02 />
       <Shows />
       <Integrantes />
+      <Footer />
     </>
   )
 }
