@@ -7,8 +7,8 @@ export default function Hero() {
             
             <div className={Style.conteudoHero}>
                 <div className={Style.textoPrincipal}>
-                    <h1 className={Style.titulo}>Por ele vivo, Nele creio!</h1>
-                    <p className={Style.subtitulo}>Tocando almas com instrumentos, vamos à luta!</p>
+                    <h1 className={Style.titulo}>Por ele vivemos, Nele cremos.</h1> 
+                    <p className={Style.subtitulo}>Tocando almas com instrumentos, vamos a luta!</p>
                 </div>
                 
                 <div className={Style.rolagemIndicador}>

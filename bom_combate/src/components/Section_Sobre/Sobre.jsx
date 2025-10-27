@@ -11,7 +11,7 @@ export default function Sobre(){
                 <div className={Style.texto_container}>
                     <h2 className={Style.titulo}>Nossa Missão</h2>
                     <p className={Style.texto_sobre}>
-                        Nossa missão é levar fé, energia 
+                        É levar fé, energia 
                         e propósito através da música. Misturamos 
                         rock, pop e adoração pra falar de vida, 
                         coragem e transformação. Acreditamos que a fé é ação
