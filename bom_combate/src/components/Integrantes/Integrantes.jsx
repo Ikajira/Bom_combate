@@ -8,7 +8,7 @@ export default function Integrantes() {
     const membros = [
         {
             id: 1,
-            nome: "Jamaica - Edilson",
+            nome: "Jamaica",
             idade: "50 anos",
             instrumento: "Bateria",
             cor: "#FF6B6B",
@@ -16,7 +16,7 @@ export default function Integrantes() {
         },
         {
             id: 2,
-            nome: "Danone - Leandro", 
+            nome: "Danone", 
             idade: "50 anos",
             instrumento: "Baixo e Vocal",
             cor: "#4ECDC4",

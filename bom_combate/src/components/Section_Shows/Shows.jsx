@@ -134,7 +134,7 @@ export default function Shows() {
                         <h1 className={Style.sectionTitle}>
                             <span className={Style.titleAccent}>Shows</span>
                         </h1>
-                        <p className={Style.sectionSubtitle}>Gravações ao vivo e apresentações</p>
+                        <p className={Style.sectionSubtitle}>Gravacoes ao vivo e apresentacoes</p>
                     </div>
                     
                     <div className={Style.videosGrid}>
