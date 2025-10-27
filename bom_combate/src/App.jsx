@@ -16,10 +16,11 @@ function App() {
       <AccessibilityWidget />
       <Header />
       <Hero />
-      <Interludio />
+      <Interludio02 />
       <Sobre />
       <Interludio02 />
       <Shows />
+      <Interludio02 />
       <Integrantes />
       <Footer />
     </>

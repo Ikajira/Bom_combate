@@ -7,10 +7,10 @@ export default function Header() {
 
     return (
         <header className={Style.header}>
-            <div className={Style.logo}>
+            <a href="hero"><div className={Style.logo}>
                 <img src={Logo} alt="Logo Bom Combate" />
                 <p>BomCombate</p>
-            </div>
+            </div></a>
 
             <div 
                 className={`${Style.menuHamburguer} ${menuOpen ? Style.active : ''}`}
@@ -21,9 +21,9 @@ export default function Header() {
             </div>
 
             <div className={`${Style.links} ${menuOpen ? Style.active : ''}`}>
+                <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
                 <a href="#shows" onClick={() => setMenuOpen(false)}>Shows</a>
                 <a href="#integrantes" onClick={() => setMenuOpen(false)}>Integrantes</a>
-                <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
             </div>
 
             {menuOpen && <div className={Style.overlay} onClick={() => setMenuOpen(false)}></div>}
