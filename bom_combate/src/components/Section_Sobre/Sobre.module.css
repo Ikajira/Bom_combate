@@ -1,6 +1,7 @@
 .sobre {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     color: white;
     display: flex;
